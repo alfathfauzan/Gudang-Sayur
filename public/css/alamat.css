@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 3rem;
+}
+
+h4 {
+}
+
+.nav {
+    position: fixed;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: rgb(168, 189, 166);
+    font-size: 1.6rem;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: 300;
+    font-family: "Lobster", serif;
+}
+
+.nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+.nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+    font-family: "Heebo", sans-serif;
+}
+
+.nav ul li a {
+    color: rgb(168, 189, 166);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.nav ul li a:hover,
+.active {
+    color: #000;
+}
+
+.nav ul li a .fa {
+    color: #3cb815;
+}
+
+.nav ul li a .fa:hover {
+    color: #000;
+}
+.buttons {
+    padding: 14px 35px;
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.8s ease 0s;
+    font-size: 15px;
+    border: solid;
+    border-color: rgb(168, 189, 166);
+}
+
+.buttons:hover {
+    color: #fff;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: #666;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+}
+
+.btn {
+    height: 35px;
+    background: rgb(168, 189, 166);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.btn:hover {
+    opacity: 0.82;
+}
+
+ul li a {
+    display: block;
+    background: #fff;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #fff;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+#check {
+    display: none;
+}
+
+#cart-icon {
+    position: relative;
+    font-size: 1.8rem;
+    cursor: pointer;
+    top: 5px;
+}
+
+.address-book {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.address-book h1 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.add-address {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgb(168, 189, 166);
+}
+
+.address-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    width: calc(33.333% - 10px); /* 3 cards per row */
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px; /* Add margin to separate cards */
+}
+
+.address-card:nth-child(3n) {
+    margin-right: 0; /* Remove right margin for the third card in each row */
+}
+
+.address-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.address-card p {
+    margin: 5px 0;
+}
+
+.actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.actions .edit,
+.actions .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.actions .edit {
+    color: #555;
+}
+
+.actions .delete {
+    color: #d00;
+}

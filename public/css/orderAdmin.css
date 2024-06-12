@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.print-button {
+    background: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.print-button:hover {
+    background: #45a049;
+}
+
+.invoice-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.transaction-data,
+.transaction-values,
+.shopping-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.transaction-data h2,
+.transaction-values h2,
+.shopping-list h2 {
+    margin-top: 0;
+}
+
+.transaction-data p,
+.transaction-values p {
+    margin: 5px 0;
+}
+
+.back-button {
+    background: #ccc;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: #bbb;
+}
+
+.shopping-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-list table,
+.shopping-list th,
+.shopping-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.shopping-list th {
+    background: #f2f2f2;
+    text-align: left;
+}
